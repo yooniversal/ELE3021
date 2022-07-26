@@ -29,5 +29,5 @@ xv6는 프로세스 간의 critical section 접근을 방지하기 위해 **spin
 xv6의 inode는 **12 direct block number**와 **1 single indirect pointer**를 관리합니다. Single indirect pointer는 direct block을 가리키는 
 pointers로 구성된 block을 가리키며, Double indirect pointer는 Single indirect pointers로 구성된 block을, Triple indirect pointer는 
 Double indirect pointers로 구성된 block을 가리킵니다. 이 프로젝트에서는 inode가 **Double indirect pointer**와 **Triple indirect pointer**를 
-관리하도록 개선합니다.
+관리하도록 해서 최종적으로 더 많은 blocks를 관리할 수 있도록 개선합니다.
 - [구현 내용](https://github.com/yooniversal/ELE3021/wiki/Project-04.-File-System)
